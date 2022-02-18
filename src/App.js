@@ -26,7 +26,16 @@ function App() {
           placeholder="Write your to do..." />
         <button>Add To Do</button>
       </form>
+      <hr />
+      <ul>
+        {toDos.map((item, index) => (
+          <li key={index}>{item}</li>
+        ))}
+      </ul>
     </div>
   );
 }
 export default App;
+
+// ['there', 'are'].map(() => ":)")
+// ['there', 'are'].map((item) => item.toUpperCase())
